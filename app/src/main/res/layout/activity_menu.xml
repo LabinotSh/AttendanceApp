@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/lightblue"
+    tools:context=".MenuActivity" >
+
+    <Button
+        android:id="@+id/buttonViewstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonaddstudent"
+        android:background="@drawable/roundedbutton2"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@drawable/view1"
+        android:text="View student" />
+
+    <Button
+        android:id="@+id/buttonlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonviewfaculty"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundedbutton2"
+        android:drawableLeft="@drawable/logout"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/buttonviewfaculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonlogout"
+        android:layout_alignLeft="@+id/buttonaddfaculty"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/roundedbutton2"
+        android:drawableLeft="@drawable/view1"
+        android:text="View faculty" />
+
+    <Button
+        android:id="@+id/buttonaddfaculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonviewfaculty"
+        android:layout_alignLeft="@+id/buttonViewstudent"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/roundedbutton2"
+        android:drawableLeft="@drawable/faculty_small"
+        android:text="Add faculty" />
+
+    <Button
+        android:id="@+id/buttonaddstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonViewstudent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@drawable/student_size70"
+        android:background="@drawable/roundedbutton2"
+        android:text="Add student" />
+
+    <Button
+        android:id="@+id/attendancePerStudentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonViewstudent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/roundedbutton2"
+        android:drawableLeft="@drawable/viewattendance"
+        android:text="Attendance Per Student" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuAdmin"
+        android:layout_below="@id/attendancePerStudentButton"
+        android:layout_marginTop="10dp"
+        android:text="Admin's Menu"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:alpha=".8"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adminIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/menuAdmin"
+        android:src="@drawable/useradmin2"
+        />
+
+</RelativeLayout>
